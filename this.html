@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+
+const person = {
+  firstName: "pragati",
+  lastName: "shukla",
+  
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+console.log(person.fullName());
+
+
+const jamesBond = {
+    firstName: "Daniel",
+    lastName: "Craig",
+    getFullName: function () {
+      console.log( { current: this });
+      return `${this.firstName} ${this.lastName}`;
+    },
+  };
+  jamesBond.getFullName();
+
+  const jamesBond2 = {
+    firstName: "Daniel",
+    lastName: "Craig",
+    getFullName: function () {
+      console.log( { current: this });
+      return `${this.firstName} ${this.lastName}`;
+    },
+    newDetails: {
+      firstName: "pragati",
+      city: "satna",
+      getName: function () {
+        console.log( this);
+        return this.firstName;
+      },
+    },
+  };
+  console.log(jamesBond2.newDetails.getName());
+</script>
+</script>
