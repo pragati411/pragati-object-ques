@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+const profile = {
+    name: "pragati",
+    city: "satna",
+    details: {
+      address: "civil line",
+      mobile: 123456,
+
+
+
+    },
+  };
+
+  const copyProfile = { ...profile };
+
+  copyProfile.name = "jaya";
+
+  
+  console.log(profile.name, copyProfile.name); 
+
+  copyProfile.city = "bhopal";
+  
+  console.log(profile.city, copyProfile.city); 
+
+  
+  profile.details.address = "not available";
+
+  console.log(profile.details.address, copyProfile.details.address); 
+
+
+
+</script>
+
+
+</script>
